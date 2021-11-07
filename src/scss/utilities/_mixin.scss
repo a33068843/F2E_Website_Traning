@@ -1,0 +1,11 @@
+@mixin size($media) {
+  @if $media == desktop {
+    @media (max-width: #{$media-desktop}px) { @content; }
+  }
+  @if $media == pad {
+    @media (max-width: #{$media-pad}px) { @content; }
+  }
+  @if $media == phone {
+    @media (max-width: #{$media-phone}px) { @content; }
+  }
+}

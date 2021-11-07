@@ -1,14 +1,23 @@
+include _header
+include _footer
+
 <!DOCTYPE html>
 html(lang="en")
 	head
 		meta(charset="UTF-8")
 		meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
-		title Document
-		link(href="../css/reset.css", rel="stylesheet")
+		title 耶嘿
+		//- 字體的 CDN
+		link(rel="preconnect" href="https://fonts.googleapis.com")
+		link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+		link(href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet")
+		//- 引用 CSS
+		link(href="../css/index.css", rel="stylesheet")
 		block css
 	body
+		+header()
 		block content
-			.container
-				.title 測試 Pug
+		+footer()
+		//- 引用 JS
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js")
 		block js
