@@ -1,0 +1,38 @@
+header {
+  a {
+    text-decoration: none;
+  }
+}
+.header {
+  &_container {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $white;
+    padding: 24px 45px;
+    border-bottom: 1px solid #E5E5E5;
+  }
+  &_logo {
+    width: 240px;
+    height: 32px;
+    background-image: url(../images/Logo.svg);
+    background-repeat: no-repeat;
+  }
+  &_menuList {
+  }
+}
+
+.menu {
+  &_item {
+    padding: 20px 10px;
+  }
+  &_text {
+    color: $text-gray;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 26px;
+  }
+}

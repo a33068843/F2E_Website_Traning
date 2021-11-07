@@ -1,0 +1,14 @@
+// 變數和介面大小
+@import "utilities/_variables.scss";
+@import "utilities/_mixin.scss";
+
+// 初始化頁面
+@import "base/_reset.scss";
+
+// 全域 & 頭尾樣式
+@import "base/_global.scss";
+@import "base/_header.scss";
+@import "base/_footer.scss";
+
+// 頁面的樣式
+@import "pages/home.scss";

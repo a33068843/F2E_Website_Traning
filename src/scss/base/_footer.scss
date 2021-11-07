@@ -1,0 +1,15 @@
+.footer {
+  &_container {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-green;
+  }
+  &_description {
+    color: $text-light;
+    font-weight: normal;
+    font-size: 14px;
+  }
+}
