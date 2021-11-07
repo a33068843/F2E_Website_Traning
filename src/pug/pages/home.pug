@@ -8,6 +8,35 @@ block append js
   //- script(src="" type="text/javascript")
 
 block content
+  .content
+    .top_container
+      .descriptionWrapper
+        .slogan 探索<span>台灣之美</span><br>
+          | 讓我們更親近這片土地
+        .textWrapper
+          i.fas.fa-map-marker-alt
+          .text 台灣旅遊景點導覽
+          .engText Taiwan Travel Guide
+      .searchWrapper
+        .selectBox#searchTypeDropdown
+          ul.default
+            li.item
+              .text 探索景點
+              i.fas.fa-chevron-down
+          ul.options#a
+            li.item
+              .text 探索景點
+            li.item
+              .text 節慶活動
+            li.item
+              .text 品嘗美食
+        input(
+          type='text'
+          placeholder='你想去哪裡？ 請輸入關鍵字'
+        )
+        button.searchButton
+          .icon
+          .text 搜尋
   div(style={'font-size': '320px'}) 13Hello World..
   div(style={'font-size': '320px'}) 123Hello World..
   div.apple 12345

@@ -1,0 +1,155 @@
+.top_container {
+  margin: 82px 95px 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .descriptionWrapper {
+    .slogan {
+      font-size: 48px;
+      font-weight: 300;
+      line-height: 70px;
+      margin-bottom: 16px;
+      span {
+        border-bottom: 2px solid $primary-yellow;
+      }
+    }
+    .textWrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+      color: $text-gray;
+
+      i {
+        position: relative;
+        bottom: 2px;
+        color: $primary-yellow;
+      }
+      .text {
+        font-size: 20px;
+        font-weight: 400;
+        margin-left: 6px;
+      }
+      .engText {
+        font-family: 'Playfair Display', serif;
+        font-size: 18px;
+        font-weight: 700;
+        margin-left: 8px;
+      }
+    }
+  }
+  .searchWrapper {
+    .selectBox {
+      .default {
+        width: 350px;
+        height: 50px;
+        margin-bottom: 6px;
+        border: 1px solid $gray;
+        border-radius: 5px;
+        cursor: pointer;
+
+        .item {
+          height: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 12px 30px;
+
+          i {
+            transition: .3s;
+          }
+          .text {
+            color: $primary-green;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 26px;
+          }
+        }
+      }
+      .options {
+        width: 350px;
+        position: absolute;
+        background-color: $white;
+        border: 1px solid $gray;
+        border-radius: 5px;
+        transform-origin: top;
+        transform: scaleY(0);
+        transition: .3s;
+
+        .item {
+          height: 50px;
+          display: flex;
+          justify-content: left;
+          align-items: center;
+          padding: 12px 30px;
+          cursor: pointer;
+
+          &:hover {
+            background-color: $light-gray;
+          }
+        }
+      }
+    }
+    .active {
+      .default {
+        i {
+          transform: rotate(-180deg);
+        }
+      }
+      .options {
+        transform: scaleY(1);
+      }
+    }
+    input {
+      width: 350px;
+      height: 50px;
+      margin-bottom: 6px;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      border: 1px solid $gray;
+      border-radius: 5px;
+      background-color: $light-gray;
+      padding: 12px 30px;
+      color: $text-dark;
+      font-size: 16px;
+      line-height: 26px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+    .searchButton {
+      width: 350px;
+      height: 50px;
+      padding: 10px 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: .3s;
+
+      &:hover {
+        background-color: $primary-hoverGreen;
+      }
+      &:active {
+        background-color: $primary-green;
+      }
+      .icon {
+        width: 30px;
+        height: 30px;
+        background-image: url('../images/search.svg');
+      }
+      .text {
+        margin-left: 10px;
+        position: relative;
+        top: 1px;
+        color: $white;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 28px;
+      }
+    }
+  }
+}

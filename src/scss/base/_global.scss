@@ -1,3 +1,17 @@
 body {
   font-family: 'Noto Sans TC', sans-serif;
+  letter-spacing: 0.03em;
+}
+i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  border: none;
+  background-color: $primary-lightGreen;
+  border-radius: 5px;
+}
+.content {
+  padding: 80px 45px 0px;
 }
