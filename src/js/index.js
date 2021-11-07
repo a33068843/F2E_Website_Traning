@@ -9,3 +9,15 @@ typeDropdownOptions.on('click', function() {
   const target = $(this).find('.text').text();
   typeDropdownDefault.text(target);
 })
+
+// 滑動圖片
+$(document).ready(function() {
+  $('#a').lightSlider({
+    item: 1,
+    loop:true,
+    auto: true,
+    pauseOnHover: true,
+    pause: 3000,
+    slideMargin: 0
+  });
+});
