@@ -12,6 +12,9 @@ button {
   background-color: $primary-lightGreen;
   border-radius: 5px;
 }
+.content {
+  min-height: calc(100vh - $footer-height);
+}
 .widthLimit {
   width: 100%;
   max-width: 1200px;

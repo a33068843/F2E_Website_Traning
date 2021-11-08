@@ -10,5 +10,9 @@
 @import "base/_header.scss";
 @import "base/_footer.scss";
 
+// 元件的樣式
+@import "components/_slide.scss";
+@import "components/_activityBox.scss";
+
 // 頁面的樣式
-@import "pages/home.scss";
+@import "pages/_home.scss";
