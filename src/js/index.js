@@ -15,7 +15,8 @@ $(document).ready(function() {
   $('#a').lightSlider({
     item: 1,
     loop:true,
-    auto: true,
+    auto: false,
+    addClass: 'customSlider',
     pauseOnHover: true,
     pause: 3000,
     slideMargin: 0
