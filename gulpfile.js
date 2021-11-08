@@ -22,7 +22,7 @@ gulp.task('browserSync', () => {
   browserSync.init({
     server: {
       baseDir: './www',
-      index: 'html/home.html'
+      index: 'home.html'
     },
     port: 1234
   })
@@ -43,7 +43,7 @@ gulp.task('pug', (done) => {
       })
     )
     .pipe(rename({dirname: ''}))
-    .pipe(gulp.dest('./www/html'))
+    .pipe(gulp.dest('./www'))
     .pipe(browserSync.reload( {stream: true} ))
   done();
 });
