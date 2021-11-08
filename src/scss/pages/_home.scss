@@ -9,6 +9,7 @@
 
   .descriptionWrapper {
     .slogan {
+      color: $text-black;
       font-size: 48px;
       font-weight: 300;
       line-height: 70px;
@@ -83,6 +84,7 @@
         transform-origin: top;
         transform: scaleY(0);
         transition: .3s;
+        z-index: 1;
 
         .item {
           height: 50px;
@@ -93,7 +95,7 @@
           cursor: pointer;
 
           &:hover {
-            background-color: $light-gray;
+            background-color: rgba($primary-lightGreen, 0.2);
           }
         }
       }
@@ -137,10 +139,10 @@
       transition: .3s;
 
       &:hover {
-        background-color: $primary-hoverGreen;
+        background-color: $primary-green;
       }
       &:active {
-        background-color: $primary-green;
+        background-color: $primary-hoverGreen;
       }
       .icon {
         width: 30px;
@@ -156,83 +158,6 @@
         font-weight: 700;
         line-height: 28px;
         letter-spacing: 28px;
-      }
-    }
-  }
-}
-.slide_container {
-  ul {
-    li {
-      position: relative;
-
-      .text {
-        color: $white;
-        font-size: 28px;
-        font-weight: 700;
-        line-height: 40px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-      img {
-        width: 100%;
-        height: 400px;
-        border-radius: 24px;
-        object-fit: cover;
-      }
-    }
-  }
-  .customSlider {
-    position: relative;
-    .lSAction {
-      a {
-        width: 40px;
-        height: 40px;
-        z-index: 0;
-        opacity: 1;
-        transition: .3s;
-      }
-      .lSPrev {
-        left: 30px;
-        background-position: 0;
-        background-image: url(../images/Arrow-Left.svg);
-        &:hover {
-          background-image: url(../images/Arrow-Left_hover.svg);
-        }
-      }
-      .lSNext {
-        right: 30px;
-        background-position: 0;
-        background-image: url(../images/Arrow-Right.svg);
-        &:hover {
-          background-image: url(../images/Arrow-Right_hover.svg);
-        }
-      }
-    }
-    .lSPager.lSpg {
-      margin: 0px; // 為了取消套件的 inline-style;
-      padding: 0;
-      position: absolute;
-      transform-origin: right;
-      bottom: 24px;
-      right: 42px;
-      width: fit-content;
-      li {
-        a {
-          width: 20px;
-          height: 20px;
-          background-color: transparent;
-          background-image: url(../images/Dot-not-selected.svg);
-          background-position: center;
-          background-repeat: no-repeat;
-          z-index: 0;
-        }
-      }
-      .active {
-        a {
-          background-image: url(../images/Dot-selected.svg);
-        }
       }
     }
   }

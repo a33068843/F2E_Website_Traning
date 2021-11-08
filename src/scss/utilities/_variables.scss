@@ -9,8 +9,10 @@ $primary-green: #65895F;
 $primary-lightGreen: #7F977B;
 $primary-hoverGreen: #879C83;
 $primary-yellow: #E0DA48;
+$primary-red: #FF725E;
 
 // 主視覺 - 字體顏色
+$text-black: #1F1F1F;
 $text-dark: #2F2F2F;
 $text-gray: #646464;
 $text-light: #FFFFFF;
@@ -19,3 +21,7 @@ $text-light: #FFFFFF;
 $media-desktop: 1440;
 $media-pad: 768;
 $media-phone: 500;
+
+// 頁首頁尾大小
+$header-height: 80px;
+$footer-height: 60px;

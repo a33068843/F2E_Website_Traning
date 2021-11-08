@@ -1,0 +1,30 @@
+extends ../base/_base.pug
+
+block append css
+  link(href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css" rel="stylesheet")
+  //- link(href="../css/home.css", rel="stylesheet")
+
+block append js
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js" type="text/javascript")
+  script(src="../js/index.js" type="text/javascript")
+  //- script(src="" type="text/javascript")
+
+block content
+  .content
+    .slide_container
+      ul#a
+        li
+          .text 新北市 | 不厭亭
+          img(src="../images/ScenicSpotPicture.png")
+        li
+          .text 新北市 | 不厭亭
+          img(src="http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcTsUtvFNQlm8coEDRfNF48_X39iW5tLbiB2dT7i_8UYdE1j6Bn5VhlJ-CsEp8PweSY6RyTbfOn-JLnuOFTDT0I")
+        li
+          .text 新北市 | 不厭亭
+          img(src="../images/ScenicSpotPicture.png")
+        li
+          .text 新北市 | 不厭亭
+          img(src="../images/ScenicSpotPicture.png")
+        li
+          .text 新北市 | 不厭亭
+          img(src="../images/ScenicSpotPicture.png")
