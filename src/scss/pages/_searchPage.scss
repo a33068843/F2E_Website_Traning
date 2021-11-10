@@ -1,0 +1,23 @@
+.searchPage {
+  .breadcrumbs {
+    margin-bottom: 40px;
+  }
+  .searchWrapper {
+    flex-direction: row;
+    gap: 15px;
+    margin: 0 15px 60px;
+
+    .selectBox {
+      width: 240px;
+
+      .default {
+        .text {
+          color: $primary-lightGreen;
+        }
+      }
+    }
+    .searchButton {
+      width: 210px;
+    }
+  }
+}
