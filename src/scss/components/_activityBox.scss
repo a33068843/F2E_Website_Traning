@@ -164,6 +164,43 @@
       }
       .location {}
     }
+    &_imgWrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 12px 30px;
+    }
+    &_img {
+      position: relative;
+      cursor: pointer;
+      width: 255px;
+      height: 125px;
+      border-radius: 24px;
+      overflow: hidden;
+
+      &:hover {
+        img {
+          transform: scale(1.1);
+        }
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        transition: .3s;
+      }
+      .title {
+        color: $white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 35px;
+      }
+    }
   }
   .locationWrapper {
     display: flex;
