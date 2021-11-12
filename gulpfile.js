@@ -9,6 +9,7 @@ const browserSync = require('browser-sync').create();
 const rename      = require('gulp-rename');
 const changed     = require('gulp-changed');
 const imagemin    = require('gulp-imagemin');
+const uglify      = require('gulp-uglify');
 
 gulp.task('watch', () => {
   gulp.watch('src/**/*.pug', gulp.series('pug'));
@@ -64,6 +65,7 @@ gulp.task('script', (done) => {
     .src('src/**/[^_]*.js')
     .pipe(plumber())
     .pipe(rename({dirname: ''}))
+    .pipe(uglify())
     .pipe(gulp.dest('./www/js'))
     .pipe(browserSync.reload( {stream: true} ))
   done();
