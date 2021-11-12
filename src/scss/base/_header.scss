@@ -27,17 +27,47 @@ header {
     background-repeat: no-repeat;
   }
   &_menuList {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 4px;
   }
 }
 
 .menu {
   &_item {
-    padding: 20px 10px;
+    margin: 0 10px;
+    &.activeHeader {
+      &::after {
+        transform: scaleX(1);
+      }
+      .menu_text {
+        color: $primary-lightGreen;
+      }
+    }
+    &::after {
+      display: block;
+      content: '';
+      padding-top: 5px;
+      transform: scaleX(0);
+      transform-origin: 0% 50%;
+      border-bottom: 2px solid $primary-yellow;
+      transition: .3s;
+    }
+    &:hover {
+      &::after {
+        transform: scaleX(1);
+      }
+      .menu_text {
+        color: $primary-lightGreen;
+      }
+    }
   }
   &_text {
     color: $text-gray;
     font-size: 18px;
     font-weight: normal;
     line-height: 26px;
+    transition: .3s;
   }
 }

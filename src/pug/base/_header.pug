@@ -1,4 +1,4 @@
-mixin header()
+mixin header(activePage)
   header
     .header
       .header_container
@@ -6,11 +6,11 @@ mixin header()
         .header_menuList
           a.menu_item(href="./information.html")
             span.menu_text 資料頁面
-          a.menu_item(href="./scene.html")
+          a.menu_item(class=activePage === "探索景點" ? "activeHeader" : "" href="./scene.html")
             span.menu_text 探索景點
-          a.menu_item(href="./event.html")
+          a.menu_item(class=activePage === "節慶活動" ? "activeHeader" : "" href="./event.html")
             span.menu_text 節慶活動
-          a.menu_item(href="./food.html")
+          a.menu_item(class=activePage === "品嘗美食" ? "activeHeader" : "" href="./food.html")
             span.menu_text 品嘗美食
           a.menu_item(href="./result.html")
             span.menu_text 搜尋結果
