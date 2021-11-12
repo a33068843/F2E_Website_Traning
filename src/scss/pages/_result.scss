@@ -1,0 +1,16 @@
+.resultPage {
+  .topWrapper {
+    justify-content: flex-start;
+    .text {
+      color: $text-gray;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 26px;
+      margin-left: 6px;
+
+      .resultCount {
+        color: $primary-brown;
+      }
+    }
+  }
+}

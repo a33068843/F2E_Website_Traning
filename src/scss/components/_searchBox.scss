@@ -111,14 +111,13 @@
       background-image: url('../images/search.svg');
     }
     .text {
-      margin-left: 10px;
+      margin: 0 10px;
       position: relative;
       top: 1px;
       color: $white;
       font-size: 16px;
       font-weight: 700;
       line-height: 28px;
-      letter-spacing: 28px;
     }
   }
 }
