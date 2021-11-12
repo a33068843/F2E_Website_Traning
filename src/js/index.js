@@ -1,97 +1,105 @@
-// const datas = [
-//   {
-//     "ID": "C1_A25000000E_100045",
-//     "Name": "聯經書房 上海書店",
-//     "DescriptionDetail": "聯經出版公司位於新生南路上的門市，不過並不侷限於自家出版品。一樓聯經書房的書籍以人文社科類為主，地下室的上海書店則是銷售簡體字書籍。除台北外，聯經在台中等地亦設有門市書店。",
-//     "Phone": "02-23620308#10(聯經書房);#15(上海書店)",
-//     "Address": "臺北市  大安區新生南路三段94號1樓、B1",
-//     "TravelInfo": "離聯經書房最近的捷運站是新店線(綠線)的公館站，從三號出口出來後沿著臺灣大學的圍牆往前走，走到臺大正門後就能看到位於校門斜前方的聯經書房了。",
-//     "OpenTime": "週一~週五：11:00-20:00；週六、週日：12:00-21:00",
-//     "Picture": {
-//       "PictureUrl1": "http://cloud.culture.tw/h_upload_ccacloud/festival/image/A0/B0/C0/D0/E0/F125/d472d173-bc0b-4eec-aa0c-44bf46e17e63.jpg"
-//     },
-//     "Position": {
-//       "PositionLon": 121.53315734863281,
-//       "PositionLat": 25.01752471923828,
-//       "GeoHash": "wsqqmd39x"
-//     },
-//     "Class1": "藝術類",
-//     "WebsiteUrl": "http://www.linkingbooks.com.tw/LNB/index.aspx",
-//     "ParkingPosition": {},
-//     "City": "臺北市",
-//     "SrcUpdateTime": "2021-11-12T01:11:18+08:00",
-//     "UpdateTime": "2021-11-12T02:40:14+08:00"
-//   },
-//   {
-//     "ID": "C1_A25000000E_100044",
-//     "Name": "艾比露比外文書店",
-//     "DescriptionDetail": "艾比露比外文書店是一間社區型書店。書店內書籍以英文兒童與成人繪本為大宗，並且不定期於店內舉辦女性成長、親職教養與英文師訓講座。感恩節至農曆新年這幾個月，也會固定舉辦義賣、物資捐贈與不定期至偏鄉或弱勢機構免費講故事活動。",
-//     "Phone": "02-2747-7808",
-//     "Address": "臺北市  松山區饒河街175號2樓",
-//     "TravelInfo": "捷運松山站2號出口，饒河夜市內",
-//     "OpenTime": "本書店已於2018年完成網路系統化訂購，辦公室與倉庫不開放選書、付費及取書。",
-//     "Picture": {
-//       "PictureUrl1": "http://cloud.culture.tw/h_upload_ccacloud/festival/image/A0/B0/C0/D0/E0/F124/ca36ee4c-19d4-4703-ade8-8c98dbc7de25.jpg"
-//     },
-//     "Position": {
-//       "PositionLon": 121.575927734375,
-//       "PositionLat": 25.050640106201172,
-//       "GeoHash": "wsqqw82fs"
-//     },
-//     "Class1": "藝術類",
-//     "WebsiteUrl": "http://www.abbyrubybooks.com",
-//     "ParkingPosition": {},
-//     "City": "臺北市",
-//     "SrcUpdateTime": "2021-11-12T01:11:18+08:00",
-//     "UpdateTime": "2021-11-12T02:40:14+08:00"
-//   },
-//   {
-//     "ID": "C1_A25000000E_100043",
-//     "Name": "鴻儒堂書局",
-//     "DescriptionDetail": "創立於1936年，專門經營日文書籍及日文雜誌，及各種日語學習教材、台日關係研究書籍等。同時有日本最新的出版資料供讀者查詢，並可代理訂購。",
-//     "Phone": "02-2311-3810；02-2311-3823",
-//     "Address": "臺北市  中正區台北市博愛路九號五樓502室",
-//     "TravelInfo": "捷運台北車站懷寧街（Z8）出口，星巴克旁溫州大餛飩巷內",
-//     "OpenTime": "週一～週六：上午 10 : 00 - 下午 18 : 00 止 / 國定假日：上午 11 : 00 - 下午 18 : 00 止 (中午 12 : 00 - 下午 13 : 00 午休 / 星期日公休)",
-//     "Picture": {
-//       "PictureUrl1": "http://cloud.culture.tw/h_upload_ccacloud/festival/image/A0/B0/C0/D0/E0/F123/a9cd880d-4875-40a0-99da-2a58bf3a41f9.JPG"
-//     },
-//     "Position": {
-//       "PositionLon": 121.51375579833984,
-//       "PositionLat": 25.04623794555664,
-//       "GeoHash": "wsqqmpe8g"
-//     },
-//     "Class1": "藝術類",
-//     "WebsiteUrl": "http://www.hjtbook.com.tw",
-//     "ParkingPosition": {},
-//     "City": "臺北市",
-//     "SrcUpdateTime": "2021-11-12T01:11:18+08:00",
-//     "UpdateTime": "2021-11-12T02:40:14+08:00"
-//   },
-//   {
-//     "ID": "C1_A25000000E_100042",
-//     "Name": "大陸書店",
-//     "DescriptionDetail": "大陸書店展售中外音樂書籍、鋼琴、小提琴、吉他…等各種樂器的學程教材及樂譜；手作藝術類書籍、期刊－－裁縫、毛線編織、壓花、十字繡、不織布、黏土、刺繡、拼布、串珠…等，更收藏了逸品級的『書道全集』等書法字帖、繪本，每每讓人有『挖寶般』流連忘返的新鮮感。",
-//     "Phone": "886-2-23113914",
-//     "Address": "臺北市  中正區衡陽路79號3F",
-//     "TravelInfo": "捷運西門站4號出口",
-//     "OpenTime": "週一～週日 09:00 ～ 20:00  (除夕至初五休)",
-//     "Picture": {
-//       "PictureUrl1": "http://cloud.culture.tw/h_upload_ccacloud/festival/image/A0/B0/C0/D0/E0/F121/56bb41c3-e7e3-4d27-8aff-7a87ddd0e1b7.jpg"
-//     },
-//     "Position": {
-//       "PositionLon": 121.51099395751953,
-//       "PositionLat": 25.04233741760254,
-//       "GeoHash": "wsqqmncd5"
-//     },
-//     "Class1": "藝術類",
-//     "WebsiteUrl": "https://www.talubook.com/",
-//     "ParkingPosition": {},
-//     "City": "臺北市",
-//     "SrcUpdateTime": "2021-11-12T01:11:18+08:00",
-//     "UpdateTime": "2021-11-12T02:40:14+08:00"
-//   }
-// ]
+const datas = [
+  {
+    "ID": "C2_315080000H_080442",
+    "Name": "2021南島族群婚禮",
+    "Description": "本處轄區位於高屏山麓，在轄管的6個鄉區中，有5個鄉區為原住民地區，族群包含魯凱、排灣、布農及拉阿魯哇族等，呈現多元的原住民文化特色。為推廣本轄特有的原住民文化，帶動部落觀光發展，希望藉由「南島族群婚禮活動」之辦理，以原住民傳統婚禮為主軸，運用觀光行銷手法，將婚禮活動包裝為具有文化特色的觀光活動，活動期間並結合轄區特色民宿、工藝、美食、伴手禮等資源及遊程安排，期盼參與活動的新人、家屬與遊客深度體驗原住民文化及婚禮特色，並帶動觀光發展及地方產業效益。「南島族群婚禮」系列活動將於每年3月份舉辦，規劃以排灣族傳統婚禮為活動主軸，藉以行銷推廣茂林國家風景區旅遊線，讓更多遊客參與活動。本系列活動將運用觀光行銷手法，結合轄區工藝、美食與伴手禮等資源及套裝遊程安排，使參與活動的新人、家屬與遊客能深度體驗原住民文化及婚禮特色，藉以帶動觀光發展及地方產業，並達成行銷轄內觀光遊憩景點和推廣原鄉部落景致之目標。※ 為因應新冠肺炎疫情，2021南島族群婚禮活動決議延期至11月辦理。    開幕活動：11/12（星期五）    新人之夜：11/19（星期五）    主婚禮活動：11/20（星期六）    部落市集：11月每個星期六、日，共8日    11/6、11/7、11/13、11/14、11/20、11/21、11/27、11/28",
+    "Location": "屏東縣 霧台鄉",
+    "Address": "霧台部落文化廣場",
+    "Organizer": "交通部觀光局茂林國家風景區管理處",
+    "StartTime": "2021-11-12T00:00:00+08:00",
+    "EndTime": "2021-11-28T00:00:00+08:00",
+    "WebsiteUrl": "https://theme.maolin-nsa.gov.tw/wedding2021/index.html",
+    "Picture": {
+      "PictureUrl1": "https://www.taiwan.net.tw/att/event/85b5a231-dee8-490d-94d2-9683ed92e656.jpg",
+      "PictureDescription1": "盪鞦韆後的新人",
+      "PictureUrl2": "https://www.taiwan.net.tw/att/event/9ddd8033-07a8-42b5-924a-419ece3d1120.jpg",
+      "PictureDescription2": "新娘盪鞦韆",
+      "PictureUrl3": "https://www.taiwan.net.tw/att/event/c6ff0f9b-ed1b-4463-b513-1e687547cc5f.jpg",
+      "PictureDescription3": "新人喝連杯酒"
+    },
+    "Position": {
+      "PositionLon": 120.73097229003906,
+      "PositionLat": 22.74406623840332,
+      "GeoHash": "wsjc7k3tg"
+    },
+    "Class1": "節慶活動",
+    "Class2": "藝文活動",
+    "City": "屏東縣",
+    "SrcUpdateTime": "2021-11-12T01:12:24+08:00",
+    "UpdateTime": "2021-11-12T02:40:14+08:00"
+  },
+  {
+    "ID": "C2_315080000H_080498",
+    "Name": "2021台灣好湯-溫泉美食嘉年華",
+    "Description": "時序逐漸進入冬天，也正式宣告臺灣已進入溫泉泡湯旺季！臺灣得天獨厚，擁有冷泉、熱泉、濁泉、海底泉等多樣性泉質，是世界知名的溫泉勝地。交通部觀光局自民國96年開始每年結合溫泉保健養生特色及現代人健康飲食需求，將臺灣「溫泉」及「美食」兩大觀光資源整合規劃推出「溫泉美食嘉年華」活動。該活動每年在全臺各地同時登場，並從全臺19個溫泉區選出啟動地點。「溫泉美食嘉年華」不但讓國內遊客全臺溫泉區泡透透，處處都享優惠，對國際觀光客也是深具魅力，更是帶動秋冬臺灣溫泉旅遊熱潮的年度盛事。活動期間，全臺溫泉區都將陸續辦理溫泉美食系列活動，並整合全臺各縣市溫泉區上百家業者，集合各溫泉區景點、人文風情與特產介紹，推薦優質店家，同時更提供好康優惠陸續引爆泡湯話題。",
+    "Location": "臺北市 北投區",
+    "Address": "新北投溫泉區",
+    "Organizer": "交通部觀光局",
+    "StartTime": "2021-11-12T00:00:00+08:00",
+    "EndTime": "2022-04-30T00:00:00+08:00",
+    "WebsiteUrl": "https://taiwanhotspring.net/",
+    "Picture": {
+      "PictureUrl1": "https://www.taiwan.net.tw/att/event/388b0f82-b621-4be2-8c5f-4dac47482d01.jpg",
+      "PictureDescription1": "礁溪溫泉公園",
+      "PictureUrl2": "https://www.taiwan.net.tw/att/event/f4adba8f-082f-45e6-9c33-36bbbab062d3.jpg",
+      "PictureDescription2": "礁溪溫泉",
+      "PictureUrl3": "https://www.taiwan.net.tw/att/event/636fe103-06a9-4ab8-902f-8ed983291c9e.jpg",
+      "PictureDescription3": "四重溪溫泉季-旭海溫泉公園"
+    },
+    "Position": {
+      "PositionLon": 121.50264739990234,
+      "PositionLat": 25.13694190979004,
+      "GeoHash": "wsqrhb592"
+    },
+    "Class1": "節慶活動",
+    "Class2": "藝文活動",
+    "City": "臺北市",
+    "SrcUpdateTime": "2021-11-12T01:12:24+08:00",
+    "UpdateTime": "2021-11-12T02:40:14+08:00"
+  },
+  {
+    "ID": "C2_315080800H_003797",
+    "Name": "台灣好湯活動",
+    "Description": "無",
+    "Location": "to see the official site",
+    "Address": "花蓮縣970花蓮市",
+    "Phone": "886-6-7861000",
+    "Organizer": "花東縱谷國家風景區管理處",
+    "StartTime": "2021-11-12T00:00:00+08:00",
+    "EndTime": "2022-04-30T23:59:59+08:00",
+    "Picture": {},
+    "Position": {
+      "PositionLon": 121.32344055175781,
+      "PositionLat": 23.019805908203125,
+      "GeoHash": "wsn6by9h1"
+    },
+    "Class1": "年度活動",
+    "City": "臺東縣",
+    "SrcUpdateTime": "2021-11-12T01:12:24+08:00",
+    "UpdateTime": "2021-11-12T02:40:14+08:00"
+  },
+  {
+    "ID": "C2_397000000A_004209",
+    "Name": "2021高雄設計節－後疫時代",
+    "Description": "無",
+    "Location": "to see the official site",
+    "Address": "高雄市803鹽埕區大勇路一號",
+    "Phone": "886-7-7995678",
+    "Organizer": "高雄市政府",
+    "StartTime": "2021-11-12T00:00:00+08:00",
+    "EndTime": "2022-01-02T23:59:59+08:00",
+    "Picture": {},
+    "Position": {
+      "PositionLon": 120.28153228759766,
+      "PositionLat": 22.619979858398438,
+      "GeoHash": "wsj89jf6f"
+    },
+    "Class1": "年度活動",
+    "City": "高雄市",
+    "SrcUpdateTime": "2021-11-12T01:12:24+08:00",
+    "UpdateTime": "2021-11-12T02:40:14+08:00"
+  }
+]
 
 // 搜尋元件
 function searchDropdown(dropdown) {
@@ -107,7 +115,6 @@ function searchDropdown(dropdown) {
 }
 // 拿到搜尋參數
 function getSettings() {
-  
 }
 // 搜尋結果個數
 function checkResults() {
@@ -145,15 +152,76 @@ function search(localSettings, callApi) {
     inputSetting  = null,
     dataCount,
   } = localSettings;
+
   switch(callApi) {
     case 'recentScene':
       recentScene();
       break;
+    case 'recentEvent':
+      recentEvent();
+      break;
+    case 'recentFood':
+      recentFood();
+      break;
   }
   $('.breadcrumbs li').last().text(kindSetting);
 }
-
 // 將不同地方用到的 API 分出來
+
+// 拿取位置資訊
+function getPosition() {
+  return new Promise((resolve, reject) => {
+    return navigator.geolocation.getCurrentPosition(resolve, reject);
+  })
+}
+// 最近活動
+function recentEvent() {
+  const selectDom = $('#recentEvent').find('.card_detailWrapper');
+  const nowDate = new Date().toISOString().split('T')[0];
+  const render = (data) => {
+    const startDate = data.StartTime.split('T')[0].replaceAll('-','/');
+    const endDate = data.EndTime.split('T')[0].replaceAll('-','/');
+    return (`
+      <div class="card_detail">
+        <div class="img">
+          <img src="${data.Picture.PictureUrl1 ? data.Picture.PictureUrl1 : "../images/noImage_x1.png"}">
+        </div>
+        <div class="description">
+          <div class="dateWrapper">
+            <span class="date_begin">${startDate}</span>
+            <span class="date_dash"></span>
+            <span class="date_finish">${endDate}</span>
+          </div>
+          <div class="title">${data.Name}</div>
+          <div class="bottom_container">
+            <div class="locationWrapper">
+              <div class="icon"></div>
+              <div class="text">${data.City}</div>
+            </div>
+            <div class="readMoreButton">
+              <div class="text">詳細介紹</div><i class="fas fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    `)
+  }
+  const item = datas.flatMap((data) => {
+    return render(data);
+  })
+  selectDom.html(item);
+  // axios.get(
+  //   `https://ptx.transportdata.tw/MOTC/v2/Tourism/Activity?$filter=date(StartTime)%20ge%20${nowDate}&$orderby=StartTime%20asc&$top=4&$format=JSON`,
+  //   { headers: getAuthority() }
+  // ).then((response) => {
+  //   const datas = response.data;
+  //   const item = datas.flatMap((data) => {
+  //     return render(data);
+  //   })
+  //   selectDom.html(item);
+  // });
+}
+// 熱門打卡景點
 function recentScene() {
   const selectDom = $('#recentScene').find('.card_simpleWrapper');
   const render = (data) => {
@@ -170,41 +238,127 @@ function recentScene() {
       </div>
     `)
   }
+  axios.get(
+    `https://ptx.transportdata.tw/MOTC/v2/Tourism/ScenicSpot?$top=4&$format=JSON`,
+    { headers: getAuthority() }
+  ).then((response) => {
+    const datas = response.data;
+    const item = datas.flatMap((data) => {
+      return render(data);
+    })
 
-  // const result = datas.flatMap((data) => {
-  //   return render(data);
-  // })
-  // selectDom.html(result);
-  // axios.get(
-  //   `https://ptx.transportdata.tw/MOTC/v2/Tourism/ScenicSpot?$orderby=ID%20desc&$top=4&$format=JSON`,
-  //   { headers: getAuthority() }
-  // ).then((response) => {
-  //   const datas = response.data;
-  //   const item = datas.flatMap((data) => {
-  //     return render(data);
-  //   })
-  //   selectDom.html(item);
-  // });
+    console.log(item);
+    selectDom.html(item);
+  });
 
+}
+// 回訪美食
+async function recentFood() {
+  const selectDom = $('#recentFood').find('.card_simpleWrapper');
+  const currentPostion = await getPosition()
+    .then((position) => {
+      const latitude = position.coords.latitude;
+      const longitude = position.coords.longitude;
+      return `&$spatialFilter=nearby(${latitude}, ${longitude}, 1000)`;
+    })
+    .catch((err) => {
+      return ``;
+    })
+  ;
+  const render = (data) => {
+    return (`
+      <div class="card_simple">
+        <div class="img">
+          <img src="${data.Picture.PictureUrl1 ? data.Picture.PictureUrl1 : "../images/noImage_x2.png"}">
+        </div>
+        <div class="title">${data.Name}</div>
+        <div class="locationWrapper">
+          <div class="icon"></div>
+          <div class="text">${data.Address.substring(0,3)}</div>
+        </div>
+      </div>
+    `)
+  }
+  axios.get(
+    `https://ptx.transportdata.tw/MOTC/v2/Tourism/Restaurant?$top=4${currentPostion}&$format=JSON`,
+    { headers: getAuthority() }
+  ).then((response) => {
+    const datas = response.data;
+    const item = datas.flatMap((data) => {
+      return render(data);
+    })
+    selectDom.html(item);
+  });
+}
+
+// 搜索頁面分頁
+function searchResult() {
+  const selectDom = $('#checkResults').find('.card_simpleWrapper');
+  const pagination = $('#pagination');
+  const render = (data) => {
+    return (`
+      <div class="card_simple">
+        <div class="img">
+          <img src="${data.Picture.PictureUrl1 ? data.Picture.PictureUrl1 : "../images/noImage_x2.png"}">
+        </div>
+        <div class="title">${data.Name}</div>
+        <div class="locationWrapper">
+          <div class="icon"></div>
+          <div class="text">${data.Address.substring(0,3)}</div>
+        </div>
+      </div>
+    `)
+  }
+  const renderPage = (pagination) => {
+    pagination.find('a').addClass('paginationButton');
+    pagination.find('.paginationjs-prev > a').html(`<i class="fas fa-chevron-left"></i>`);
+    pagination.find('.paginationjs-next > a').html(`<i class="fas fa-chevron-right"></i>`);
+  }
+  axios.get(
+    `https://ptx.transportdata.tw/MOTC/v2/Tourism/ScenicSpot?$top=22&$format=JSON`,
+    { headers: getAuthority() }
+  ).then((response) => {
+    const datas = response.data;
+    console.log(datas);
+    pagination.pagination({
+      dataSource: datas,
+      pageSize: 2,
+      callback: function(datas, pagination) {
+        
+        renderPage(pagination.el);
+        const item = datas.flatMap((data) => {
+          return render(data);
+        })
+        selectDom.html(item);
+      }
+    })
+  });
 }
 
 $(document).ready(function() {
   const currentPage = location.pathname;
-  if (currentPage === '/result.html') search();
+  // if (currentPage === '/result.html') search();
+  if (currentPage === '/result.html') searchResult();
 
-  console.log('get');
-  console.log(localStorage.getItem('setting'));
   const a = !!localStorage.getItem('search');
-  console.log(a);
   const localSettings = JSON.parse(localStorage.getItem('setting'));
-  console.log(localSettings);
   localStorage.clear();
-
+  getPosition()
   // 首頁串 API
+  const hasRecentEvent = !!$('#recentEvent').length;
+  if (hasRecentEvent) {
+    const searchCondition = {};
+    search(searchCondition, 'recentEvent');
+  }
   const hasRecentScene = !!$('#recentScene').length;
   if (hasRecentScene) {
     const searchCondition = {};
     search(searchCondition, 'recentScene');
+  }
+  const hasRecentFood = !!$('#recentFood').length;
+  if (hasRecentFood) {
+    const searchCondition = {};
+    search(searchCondition, 'recentFood');
   }
 
   // 搜尋元件判斷處
@@ -256,7 +410,8 @@ $(document).ready(function() {
       addClass: 'customSlider',
       pauseOnHover: true,
       pause: 3000,
-      slideMargin: 0
+      slideMargin: 0,
+      enableDrag: false,
     });
   }
 });

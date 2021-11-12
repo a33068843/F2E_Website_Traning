@@ -12,6 +12,9 @@ button {
   background-color: $primary-lightGreen;
   border-radius: 5px;
 }
+a {
+  text-decoration: none;
+}
 .content {
   min-height: calc(100vh - $footer-height);
 }

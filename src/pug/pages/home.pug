@@ -59,7 +59,7 @@ block content
     .activity_container#recentEvent
       .topWrapper
         .title 近期活動
-        .readMoreButton
+        a.readMoreButton(href="./event.html")
           .text 查看更多活動
           i.fas.fa-chevron-right
       .card_detailWrapper
@@ -130,7 +130,7 @@ block content
     .activity_container#recentScene
       .topWrapper
         .title 熱門打卡景點
-        .readMoreButton
+        a.readMoreButton(href="./scene.html")
           .text 查看更多景點
           i.fas.fa-chevron-right
       .card_simpleWrapper
@@ -162,10 +162,10 @@ block content
           .locationWrapper
             .icon
             .text 宜蘭縣縣縣縣
-    .activity_container
+    .activity_container#recentFood
       .topWrapper
         .title 一再回訪美食
-        .readMoreButton
+        a.readMoreButton(href="./food.html")
           .text 查看更多美食
           i.fas.fa-chevron-right
       .card_simpleWrapper
