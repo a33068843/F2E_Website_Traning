@@ -36,6 +36,8 @@
     }
     .options {
       width: 100%;
+      max-height: 350px;
+      overflow-x: auto;
       position: absolute;
       margin-top: 6px;
       background-color: $white;
@@ -46,6 +48,23 @@
       transition: .3s;
       z-index: 1;
 
+      &::-webkit-scrollbar {
+        width: 20px;
+      }
+      &::-webkit-scrollbar-track {
+        background-color: transparent;
+      }
+      
+      &::-webkit-scrollbar-thumb {
+        background-color: #DBDBDB;
+        border-radius: 20px;
+        border: 8px solid transparent;
+        background-clip: content-box;
+      }
+      
+      &::-webkit-scrollbar-thumb:hover {
+        background-color: #CFCFCF;
+      }
       .item {
         height: 50px;
         display: flex;
@@ -56,6 +75,9 @@
 
         &:hover {
           background-color: rgba($primary-lightGreen, 0.2);
+        }
+        .text {
+          color: $text-gray;
         }
       }
     }

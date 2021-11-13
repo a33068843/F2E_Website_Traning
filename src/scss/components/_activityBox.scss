@@ -2,6 +2,9 @@
   margin-bottom: 36px;
   display: flex;
   flex-direction: column;
+  &:last-child {
+    margin-bottom: 100px;
+  }
 
   .topWrapper {
     width: 100%;
@@ -136,7 +139,6 @@
       flex-direction: row;
       flex-wrap: wrap;
       gap: 36px 30px;
-      margin-bottom: 100px;
     }
     &_simple {
       width: 255px;
@@ -208,9 +210,11 @@
         font-size: 24px;
         font-weight: 700;
         line-height: 35px;
+        white-space: nowrap;
       }
     }
     &_pagination {
+      margin-top: 100px;
       display: flex;
       justify-content: center;
 

@@ -8,6 +8,7 @@ block append css
 
 block append js
   script(src="../js/index.js" type="text/javascript")
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.5/pagination.min.js" type="text/javascript")
   //- script(src="" type="text/javascript")
 
 block content
@@ -25,11 +26,49 @@ block content
           li.item
             .text 全部縣市
           li.item
-            .text 台北市
+            .text 臺北市
           li.item
-            .text 台北縣
+            .text 新北市
+          li.item
+            .text 基隆市
+          li.item
+            .text 宜蘭縣
           li.item
             .text 桃園市
+          li.item
+            .text 新竹縣
+          li.item
+            .text 新竹市
+          li.item
+            .text 苗栗縣
+          li.item
+            .text 臺中市
+          li.item
+            .text 彰化縣
+          li.item
+            .text 南投縣
+          li.item
+            .text 雲林縣
+          li.item
+            .text 嘉義縣
+          li.item
+            .text 嘉義市
+          li.item
+            .text 臺南市
+          li.item
+            .text 高雄市
+          li.item
+            .text 屏東縣
+          li.item
+            .text 花蓮縣
+          li.item
+            .text 臺東縣
+          li.item
+            .text 澎湖縣
+          li.item
+            .text 金門縣
+          li.item
+            .text 連江縣
       .selectBox#searchDropdown_topic
         ul.default
           li.item
@@ -39,19 +78,25 @@ block content
           li.item
             .text 全部主題
           li.item
-            .text 自然風景類
+            .text 節慶活動
           li.item
-            .text 觀光工廠類
+            .text 自行車活動
           li.item
-            .text 遊憩類
-      input.searchInput(
+            .text 遊憩活動
+          li.item
+            .text 產業文化活動
+          li.item
+            .text 年度活動
+          li.item
+            .text 四季活動
+      input.searchInput#search_keyword(
         type='text'
         placeholder='你想去哪裡？ 請輸入關鍵字'
       )
       button.searchButton
         .icon
         .text 搜　尋
-    .activity_container
+    .activity_container#searchContainer
       .topWrapper
         .title 熱門主題
       .card_imgWrapper
@@ -73,3 +118,7 @@ block content
         .card_img
           img(src='../images/Theme-bg2-6.png')
           .title 四季活動
+      .card_pagination#pagination
+      .card_emptyWrapper#searchEmpty(style={'display':'none'})
+        .img
+        .text 目前查無資料<br>請重新搜尋
