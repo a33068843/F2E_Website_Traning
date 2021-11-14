@@ -2,43 +2,40 @@ extends ../base/_base.pug
 
 block append css
   link(href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css" rel="stylesheet")
+  link(href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" rel="stylesheet")
   //- link(href="../css/home.css", rel="stylesheet")
 
 block append js
   script(src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js" type="text/javascript")
-  script(src="../js/index.js" type="text/javascript")
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" type="text/javascript")
   //- script(src="" type="text/javascript")
 
 block content
   .content
     ul.breadcrumbs
       li: a(href='./') 首頁
-      li: a(href='#') 探索景點
-      li: a(href='#') 宜蘭縣
-      li 羅東林業文化園區
+      li: a(href='#') 搜尋分類
+      li: a(href='#') 縣市地點
+      li 搜索名稱
     .slide_container
-      ul#a
+      ul#slideContainer
         li
-          img(src="https://s3-alpha-sig.figma.com/img/8d36/1f3f/ee4bccfa86bc418758754d9ca1a5a3d5?Expires=1637539200&Signature=hP6xjG1L~M79GvkqqYDwCwY5qzSZvpn230kwsPlja9cBPk1t7wQtWm9b-g0y0Inlp5PCZXI3iZmH6H8R7l11I37gr5yO3t2TA0nWjga5~5wJA8zeODewuIuYnyjX5ERdK~cNY3XE85M07fzlQPEY5JXVNjNFNVDTNVG9eB7px8F3FptUUOIov9lb4yuXZJ0BIz2vU4gZh-8Mx0g2pVEMR1EJUJDrE7rYh2oHOTYlPVOcO5v1vAt8viUp9Hg1z-44hXfA9LEa5JKtxDiYu5DmYw8bHv2ilkbc5F7RLS0J7NqR~RZX6vhkZe4jmkZ5dRQg4NU15NL6EBElidtPk--14w__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA")
+          img(src="../images/noImage_x4.png")
         li
           img(src="http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcTsUtvFNQlm8coEDRfNF48_X39iW5tLbiB2dT7i_8UYdE1j6Bn5VhlJ-CsEp8PweSY6RyTbfOn-JLnuOFTDT0I")
         li
           img(src="../images/ScenicSpotPicture.png")
-        li
-          img(src="../images/ScenicSpotPicture.png")
-        li
-          img(src="../images/ScenicSpotPicture.png")
-    .info_container
+    .info_container#infoContainer
       .info_title 羅東林業文化園區
       .info_tags
         .info_tag 自然風景類
         .info_tag 林場類
         .info_tag 你好
-      .info_columnDescription
+      .info_columnDescription#infoDetail
         .title 景點介紹：
         .text 日治時期台灣有三大林場，分別是：八仙山林場、阿里山林場以及太平山林場。從太平山林場所砍伐的檜木、扁柏等木材，都會運送到羅東出張所和貯木池進行存放，而羅東出張所經過規劃後，成為現今的羅東林業文化園區。羅東林業文化區坐落於羅東市區附近，交通十分方便，園內規劃有貯木池、森林鐵路、竹林車站、蒸汽火車頭、綠林和步道等，從這些設備、建築物中發現當年的林業發展多麼蓬勃，又是多麼地熱鬧，同時也讓人不禁感慨，許多珍貴的檜木消逝在太平山中。隨著林業發展的轉型，可以看見昔日風華的貯木池，零散放著當時砍伐的檜木，如今，貯木池不再具有貯木的功能，而是成為水鳥和魚兒們的天堂。在園區中散步，彷彿進入一座秘密花園，園內種植滿滿茂密的樹木，不時聽見鳥兒的叫聲，空氣中帶有芬多精與淡淡的檜木香，舒服的環境，令人不禁停下腳步，感受內心的寧靜。
       .info_rowWrapper
-        .info_colWrapper.info_descriptionWrapper
+        .info_colWrapper.info_descriptionWrapper#infoData
             .info_rowDescription
               .title 開放時間：
               .text 06:00-19:00
@@ -58,7 +55,7 @@ block content
               .title 注意事項：
               .text 1、愛護大自然生物，並請維護環境整潔。2、夏季日照與冬季寒風甚強，請預作防範
         .info_colWrapper
-          .info_map
+          .info_map#map
           .info_columnDescription
             .title 周邊資訊：
             .info_buttonWrapper
@@ -71,7 +68,7 @@ block content
               .info_button
                 .icon.food
                 .text 附近美食
-    .activity_container
+    .activity_container#infoRecommend
       .topWrapper
         .title 還有這些不能錯過的景點
         .readMoreButton
